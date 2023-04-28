@@ -38,12 +38,16 @@ $ uvicorn Main:app --reload
 - Don't need to create tables as ORM model with sqlalchemy and alembic - `automate` this step 
 - If you stuck into somewhere or get error please create the issue in issues section I would be happy to help you.
 
-## Teach Stack
+## Tech Stack
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi)
 ![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens)
+
+## More Information 
+- Looking forward to work on front-end using this web API. 
+- Please feel free to contact me or contribute in this project. 
 
 ## Author and Social
 
@@ -51,7 +55,3 @@ $ uvicorn Main:app --reload
 [![@chirag4242](https://img.shields.io/badge/GitHub-181717.svg?style=flat-square&logo=GitHub&logoColor=white)](https://www.github.com/chirag4242)
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=flat-square&logo=firefox&logoColor=#FF7139)](https://cio-app.herokuapp.com/)
 [![Projects](https://img.shields.io/badge/Projects%20Site-4285F4?style=flat-square&logo=GoogleChrome&logoColor=white)](https://sites.google.com/view/chiragpatil/home)
-
-## More Information 
-- Looking forward to work on front-end using this web API. 
-- Please feel free to contact me or contribute in this project. 
