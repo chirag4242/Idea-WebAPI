@@ -22,7 +22,9 @@ def get_posts(db: Session = Depends(get_db),
     # posts = db.query(models.Post).filter(models.Post.title.contains(search)).limit(limit).offset(skip).all()
     
     posts = db.query(models.Post, func.count(models.Vote.post_id).label("votes")).join(
-        models.Vote, models.Vote.post_id == models.Post.id,isouter=True).group_by(models.Post.id).filter(models.Post.title.contains(search)).limit(limit).offset(skip).all() 
+        models.Vote, models.Vote.post_id == models.Post.id,isouter=True).group_by(models.Post.id).filter(
+            func.lower(models.Post.title).contains(search.lower()),
+            func.lower(models.Post.title).ilike(f"%{search}%")).limit(limit).offset(skip).all() 
     return  posts
 
 # We want to create the data we use post which takes 
