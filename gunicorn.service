@@ -1,0 +1,14 @@
+[Unit]
+Description=IdeaWeb fastapi application
+After=network.target
+
+[Service]
+User=chirag
+Group=chirag
+WorkingDirectory=/home/chirag/app/src/
+Environment="PATH=/home/chirag/app/venv-code-0/bin"
+EnvironmentFile=/home/chirag/.env
+ExecStart=/home/chirag/app/venv-code-0/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.Main:app --bind 0.0.0.0:8000
+
+[Install]
+WantedBy=multi-user.target
